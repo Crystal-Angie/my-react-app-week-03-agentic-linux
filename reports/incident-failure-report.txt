@@ -1,0 +1,29 @@
+========================================
+Linux Incident Triage Report
+========================================
+Full Name: Angela C. Chibuike
+Timestamp: 2026-09-15T15:48:34Z
+Hostname: ip-172-31-0-50
+Target Service: nginx
+Target URL: http://localhost
+
+[FAIL] Nginx service is not active
+[FAIL] Port 80 is not listening
+[FAIL] Local HTTP check returned status 000
+[WARN] Root disk usage is 89%
+[WARN] Available memory is 56 MB
+
+Recent Nginx service logs (last 5 lines):
+ Sep 14 16:09:00 ip-172-31-0-50 systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+ Sep 14 16:09:00 ip-172-31-0-50 systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
+ Sep 15 15:47:08 ip-172-31-0-50 systemd[1]: Stopping nginx.service - A high performance web server and a reverse proxy server...
+ Sep 15 15:47:08 ip-172-31-0-50 systemd[1]: nginx.service: Deactivated successfully.
+ Sep 15 15:47:08 ip-172-31-0-50 systemd[1]: Stopped nginx.service - A high performance web server and a reverse proxy server.
+
+Summary:
+PASS: 0
+WARN: 2
+FAIL: 3
+Overall Status: FAIL
+Script Exit Code: 2
+Report File: /home/ubuntu/week-03-agentic-linux/reports/linux-health-report.txt
